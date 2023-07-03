@@ -1,13 +1,13 @@
 <!--
-@Project: Learnify
+@Project: E-Learning
 @Programmer: Syauqi Zaidan Khairan Khalaf
 @Website: https://linktr.ee/syauqi
 @Email : syaokay@gmail.com
 
-@About-Learnify :
+@About-E-Learning :
 Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf.
-Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian
-yang tersedia secara gratis. Learnify dibuat ditujukan agar para siswa dan
+E-Learning adalah Web edukasi yang dilengkapi video, materi dan sistem ujian
+yang tersedia secara gratis. E-Learning dibuat ditujukan agar para siswa dan
 guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 -->
 
@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Data Guru - Learnify</title>
+    <title>Data Guru - E-Learning</title>
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                                                                                     ?></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title">Admin - Learnify</div>
+                            <div class="dropdown-title">Admin - E-Learning</div>
                             <a href="<?= base_url('welcome/logout') ?>" class="dropdown-item has-icon text-danger">
                                 <i class="fas fa-sign-out-alt"></i> Logout
                             </a>
@@ -70,7 +70,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="sidebar-brand text-danger">
                         <div>
                             <a href="<?= base_url('admin') ?>" style="font-size: 30px;font-weight:900;font-family: 'Poppins', sans-serif;" class="text-success text-center"><i style="font-size: 30px;" class="fas fa-graduation-cap"></i> |
-                                Learnify <sup>3</sup> </a>
+                                E-Learning <sup>3</sup> </a>
                         </div>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
@@ -121,7 +121,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                         Pembuat</a>
                                 </li>
                                 <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
-                                        Learnify</a>
+                                        E-Learning</a>
                                 </li>
                             </ul>
                         </li>
@@ -134,7 +134,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <section class="section">
                     <div class="card" style="width:100%;">
                         <div class="card-body">
-                            <h2 class="card-title" style="color: black;">Management Data Guru Learnify</h2>
+                            <h2 class="card-title" style="color: black;">Management Data Guru E-Learning</h2>
                             <hr>
                             <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction. </p>
                             <a href="<?= base_url('admin/add_guru') ?>" class="btn btn-success">Tambah

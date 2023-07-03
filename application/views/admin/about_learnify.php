@@ -1,13 +1,13 @@
 <!--
-@Project: Learnify
+@Project: E-Learning
 @Programmer: Syauqi Zaidan Khairan Khalaf
 @Website: https://linktr.ee/syauqi
 @Email : syaokay@gmail.com
 
-@About-Learnify :
+@About-E-Learning :
 Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf.
-Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian
-yang tersedia secara gratis. Learnify dibuat ditujukan agar para siswa dan
+E-Learning adalah Web edukasi yang dilengkapi video, materi dan sistem ujian
+yang tersedia secara gratis. E-Learning dibuat ditujukan agar para siswa dan
 guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 -->
 
@@ -17,7 +17,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-	<title>Tentang Developer - Learnify</title>
+	<title>Tentang Developer - E-Learning</title>
 	<!-- General CSS Files -->
 	<link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 																									?></div>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<div class="dropdown-title">Admin - Learnify</div>
+							<div class="dropdown-title">Admin - E-Learning</div>
 							<a href="<?= base_url('welcome/logout') ?>" class="dropdown-item has-icon text-danger">
 								<i class="fas fa-sign-out-alt"></i> Logout
 							</a>
@@ -66,7 +66,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 					<div class="sidebar-brand text-danger">
 						<div>
 							<a href="<?= base_url('admin') ?>" style="font-size: 30px;font-weight:900;font-family: 'Poppins', sans-serif;" class="text-success text-center"><i style="font-size: 30px;" class="fas fa-graduation-cap"></i> |
-								Learnify <sup>3</sup> </a>
+								E-Learning <sup>3</sup> </a>
 						</div>
 					</div>
 					<div class="sidebar-brand sidebar-brand-sm">
@@ -117,7 +117,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 										Pembuat</a>
 								</li>
 								<li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
-										Learnify</a>
+										E-Learning</a>
 								</li>
 							</ul>
 						</li>
@@ -129,7 +129,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 			<div class="main-content">
 				<section class="section">
 					<div class="section-header">
-						<h1 style="font-size: 27px; letter-spacing:-0.5px; color:black;">Tentang Project Learnify </h1>
+						<h1 style="font-size: 27px; letter-spacing:-0.5px; color:black;">Tentang Project E-Learning </h1>
 					</div>
 					<div class="">
 						<video class="afterglow" autoplay id="myvideo" width="1280" height="720">
@@ -140,9 +140,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 					<div class="">
 						<div class="card" style="width:100%;">
 							<div class="card-body">
-								<h2 class="card-title" style="color: black;">Tentang Learnify</h2>
+								<h2 class="card-title" style="color: black;">Tentang E-Learning</h2>
 								<hr>
-								<p class="card-text">Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf. <br> Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian yang tersedia secara gratis. <br> Learnify dibuat ditujukan agar para siswa dan guru dapat terus belajar dan mengajar dimana saja dan kapan saja. </p>
+								<p class="card-text">Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf. <br> E-Learning adalah Web edukasi yang dilengkapi video, materi dan sistem ujian yang tersedia secara gratis. <br> E-Learning dibuat ditujukan agar para siswa dan guru dapat terus belajar dan mengajar dimana saja dan kapan saja. </p>
 							</div>
 						</div>
 					</div>
