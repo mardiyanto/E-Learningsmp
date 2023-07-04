@@ -42,10 +42,9 @@ if(@$_GET['action'] == '') {
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>NIDN</th>
+                                    <th>NIM</th>
                                     <th>Nama Lengkap</th>
                                     <th>Jenis Kelamin</th>
-                                    <th>Alamat</th>
                                     <th>Kelas</th>
                                     <?php if(@$_SESSION[admin]) { ?>
                                         <th>Status</th>
@@ -69,7 +68,6 @@ if(@$_GET['action'] == '') {
     	                                <td><?php echo $data_siswa['nis']; ?></td>
     	                                <td><?php echo $data_siswa['nama_lengkap']; ?></td>
     	                                <td><?php echo $data_siswa['jenis_kelamin']; ?></td>
-    	                                <td><?php echo $data_siswa['alamat']; ?></td>
                                         <td align="center"><?php echo $data_siswa['nama_kelas']; ?></td>
                                         <?php if(@$_SESSION[admin]) { ?>
         	                                <td><?php echo ucfirst($data_siswa['status']); ?></td>

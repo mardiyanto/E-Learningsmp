@@ -5,7 +5,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-12">
         <div class="notice-board">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -51,7 +51,7 @@
     <?php
     if(@$_GET['action'] == 'detail') {
     ?>
-      <div class="col-md-7">
+      <div class="col-md-12">
         <div class="notice-board">
           <div class="panel panel-default">
           <div class="panel-heading">Detail Berita</div> 

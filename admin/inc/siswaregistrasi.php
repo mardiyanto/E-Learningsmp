@@ -24,11 +24,10 @@ if(@$_SESSION['admin']) {
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>NPM</th>
+                                    <th>NIM</th>
                                     <th>Nama Lengkap</th>
                                     <th>Jenis Kelamin</th>
                                     <th>TTL</th>
-                                    <th>Alamat</th>
                                     <th>Status</th>
                                     <th>Opsi</th>
                                 </tr>
@@ -44,7 +43,6 @@ if(@$_SESSION['admin']) {
     	                                <td><?php echo $data_siswa['nama_lengkap']; ?></td>
     	                                <td><?php echo $data_siswa['jenis_kelamin']; ?></td>
     	                                <td><?php echo $data_siswa['tempat_lahir'].", ".tgl_indo($data_siswa['tgl_lahir']); ?></td>
-    	                                <td><?php echo $data_siswa['alamat']; ?></td>
     	                                <td><?php echo ucfirst($data_siswa['status']); ?></td>
     	                                <td align="center" width="200px">
     	                                    <a href="?page=siswaregistrasi&action=aktifkan&id=<?php echo $data_siswa['id_siswa']; ?>" class="badge" style="background-color:#390;">Aktifkan</a>
@@ -99,8 +97,7 @@ Halaman Tambah data  akun siswa e-learning
                                 <option value="Budha">Budha</option>
                                 <option value="Konghucu">Konghucu</option>
                             </select>
-                            Nama Ayah* : <input type="text" name="nama_ayah" class="form-control" required />
-                            Nama Ibu* : <input type="text" name="nama_ibu" class="form-control" required />
+                           
                             Nomor Telepon : <input type="text" name="no_telp" class="form-control" />
                             Email : <input type="email" name="email" class="form-control" />
                             Alamat* : <textarea name="alamat" class="form-control" rows="3" required></textarea>
@@ -113,14 +110,7 @@ Halaman Tambah data  akun siswa e-learning
                                     echo '<option value="'.$data_kelas['id_kelas'].'">'.$data_kelas['nama_kelas'].'</option>';
                                 } ?>
                             </select>
-                            Tahun Masuk* :
-                            <select name="thn_masuk" class='form-control select2' required>
-                                <option value="">- Pilih -</option>
-                                <?php
-                                for ($i = 2020; $i >= 2000; $i--) { 
-                                    echo '<option value="'.$i.'">'.$i.'</option>';
-                                } ?>
-                            </select>
+                           
                             Foto : <input type="file" name="gambar" class='form-control select2' />
                             Username* : <input type="text" name="user" class="form-control" required />
                             Password* : <input type="password" name="pass" class="form-control" required />
@@ -158,13 +148,13 @@ Halaman Tambah data  akun siswa e-learning
                             } else {
                                 if($nama_gambar != '') {
                                     if(move_uploaded_file($sumber, $target.$nama_gambar)) {
-                                        mysqli_query($db, "INSERT INTO tb_siswa VALUES('', '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$nama_ayah', '$nama_ibu', '$no_telp', '$email', '$alamat', '$kelas', '$thn_masuk', '$nama_gambar', '$user', md5('$pass'), '$pass', 'tidak aktif')") or die ($db->error);          
+                                        mysqli_query($db, "INSERT INTO tb_siswa VALUES('', '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$no_telp', '$email',  '$kelas',  '$nama_gambar', '$user', md5('$pass'), '$pass', 'tidak aktif')") or die ($db->error);          
                                         echo '<script>alert("Pendaftaran berhasil, silahkan login"); window.location="./"</script>';
                                     } else {
                                         echo '<script>alert("Gagal mendaftar, foto gagal diupload, coba lagi!");</script>';
                                     }
                                 } else {
-                                    mysqli_query($db, "INSERT INTO tb_siswa VALUES('', '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$nama_ayah', '$nama_ibu', '$no_telp', '$email', '$alamat', '$kelas', '$thn_masuk', 'anonim.png', '$user', md5('$pass'), '$pass', 'tidak aktif')") or die ($db->error);          
+                                    mysqli_query($db, "INSERT INTO tb_siswa VALUES('', '$nis', '$nama_lengkap', '$tempat_lahir', '$tgl_lahir', '$jenis_kelamin', '$agama', '$no_telp', '$email', '$kelas', 'anonim.png', '$user', md5('$pass'), '$pass', 'tidak aktif')") or die ($db->error);          
                                     echo '<script>alert("Pendaftaran berhasil"); window.location="?page=siswaregistrasi"</script>';
                                 }
                             }
